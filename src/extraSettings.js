@@ -3,7 +3,7 @@
  */
 
 // 额外分数：修改数字
-let extraScore = 1;
+let extraScore = 100;
 
 // 无敌模式：true 改为 false
 let wuDi = true;
@@ -13,9 +13,9 @@ let firstFruit = 0;
 
 // 指定生成的水果
 const minRandomFruitNum = 0; // 生成随机水果最小值（0-10）
-const maxRandomFruitNum = 5; // 生成随机水果最大值（1-11）
+const maxRandomFruitNum = 6; // 生成随机水果最大值（1-11）
 let setFruits = {
-  startFruits: [0, 0, 1, 2, 2, 3], // 指定前几次生成的水果，可填入任意数量的数字
+  startFruits: [1, 2, 3, 4, 5, 6, 7, 8], // 指定前几次生成的水果，可填入任意数量的数字
   randomFunction: () => {
     return minRandomFruitNum + Math.floor(Math.random() * (maxRandomFruitNum - minRandomFruitNum));
   }
@@ -28,10 +28,10 @@ let fruitQTan = false;
 let fruitSlowDown = false;
 
 // 广告链接：false 或为空字符串表示不会跳转到广告
-let adLink = 'https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/yupi_wechat.png';
+let adLink = 'http://qm.qq.com/cgi-bin/qm/qr?k=EGVYAI_-JqHrh1rsA-vJJ_EzkEPLLULl';
 
 // 修改网页标题：将 "合成大西瓜" 进行替换
-document.getElementsByTagName("title")[0].innerText = '合成大西瓜';
+document.getElementsByTagName("title")[0].innerText = '合成大卡片 - pandecheng';
 
 // 开启选分弹窗：将 false 改为 true
 let selectModal = false;
